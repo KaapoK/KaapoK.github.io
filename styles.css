@@ -1,14 +1,21 @@
 
+body, header, h1, nav ul, nav li, nav a, ul, li, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #C19D72, #B77B43, #262421);
-    color: black;
 }
+
 
 header {
     background-image: linear-gradient(to right, #C19D72, #B77B43, #262421);
-    color: rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -16,10 +23,12 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
+
 
 nav ul {
     list-style: none;
@@ -33,10 +42,10 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px 20px;
+    background-image: linear-gradient(to right, #C19D72, #B77B43, #262421);
+    border-radius: 5px;
 }
 
 nav a::before {
@@ -56,7 +65,7 @@ nav a:hover::before {
     opacity: 1;
 }
 
-/* Lisätty tyylimääritys */
+
 ul {
     list-style: none;
     padding: 0;
@@ -68,9 +77,6 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
     padding: 10px 20px;
     background-image: linear-gradient(to right, #C19D72, #B77B43, #262421);
     border-radius: 5px;
@@ -79,3 +85,13 @@ a {
 a:hover {
     background-color: #814e00;
     color: white;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .link-item {
+        width: 100%;
+    }
+}
